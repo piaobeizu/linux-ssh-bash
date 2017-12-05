@@ -15,16 +15,8 @@ except ImportError:
     os.system("pip3 install pexpect")
     sys.exit(1)
 
-SHOW_SERVER = {
-    "mac": ["10.66.29.56"],
-    "bae": ["180.76.152.250"],
-    "rootcloud": ["hadoop-master-dev-10.70.19.222"]
-}
-SERVER = {
-    "10.66.29.56": ["22", "steven", "10.66.29.56", "1"],
-    "180.76.152.250": ["22", "root", "180.76.152.250", "1234asdf!"],
-    "hadoop-master-dev-10.70.19.222": ["22", "root", "10.70.19.222", "Cdh@20161123"],
-}
+SHOW_SERVER = {}
+SERVER = {}
 
 
 def auto_connect(host):
