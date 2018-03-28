@@ -5,6 +5,7 @@ import os
 import sys
 import traceback
 import pexpect
+import setteings
 
 try:
     import pexpect
@@ -15,8 +16,8 @@ except ImportError:
     os.system("pip3 install pexpect")
     sys.exit(1)
 
-SHOW_SERVER = {}
-SERVER = {}
+SHOW_SERVER = setteings.SHOW_SERVER
+SERVER = setteings.SERVER
 
 
 def auto_connect(host):
@@ -41,7 +42,7 @@ def auto_connect(host):
         traceback.print_exc()
 
 
-show = "\n其从如下的连接中选择一个：\n"
+show = "其从如下的连接中选择一个：\n\n"
 i = 1
 tmp = [""] * 1000
 
@@ -49,7 +50,7 @@ for sel in SHOW_SERVER:
     show = show + sel + "\n"
     for server in SHOW_SERVER[sel]:
         if server != "" and server != None:
-            show = show + "  |--" + "[" + str(i) + "] " + server + "\n"
+            show = show + "    |--" + "[" + str(i) + "] " + server + "\n"
             tmp[i - 1] = server
             i += 1
 print(show)
