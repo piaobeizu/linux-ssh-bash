@@ -54,7 +54,14 @@ for sel in SHOW_SERVER:
             tmp[i - 1] = server
             i += 1
 print(show)
-select = int(input("请输入连接编号："))
+iinput = "steven"
+while iinput.isdigit() is not True:
+    if iinput != "steven":
+        print("\n输入有误，请输入正确的编号数字!\n")
+    iinput = input("请输入连接编号：")
+
+select = int(iinput)
+
 try:
     host = SERVER[tmp[select - 1]]
 except:
