@@ -5,7 +5,7 @@ import os
 import sys
 import traceback
 import pexpect
-import setteings
+import settings
 
 try:
     import pexpect
@@ -16,8 +16,8 @@ except ImportError:
     os.system("pip3 install pexpect")
     sys.exit(1)
 
-SHOW_SERVER = setteings.SHOW_SERVER
-SERVER = setteings.SERVER
+SHOW_SERVER = settings.SHOW_SERVER
+SERVER = settings.SERVER
 
 
 def auto_connect(host):
