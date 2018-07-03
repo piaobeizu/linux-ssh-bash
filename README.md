@@ -14,8 +14,8 @@ linux和mac环境的ssh连接工具
 # FAQ
 - Q：环境
 
-本项目需要python3的环境支持
+  本项目需要python3的环境支持
 
 - Q：第一次使用报错
 
-本项目需要python环境安装 pexpect 模块，请自行百度怎么安装 pexpect 模块
+  本项目需要python环境安装 pexpect 模块，请自行百度怎么安装 pexpect 模块
