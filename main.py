@@ -24,8 +24,8 @@ def link():
     PINK = '\033[1;35m'  # 粉红
     RES = '\033[0m'
 
-    SHOW_SERVER = setteings.SHOW_SERVER
-    SERVER = setteings.SERVER
+    SHOW_SERVER = settings.SHOW_SERVER
+    SERVER = settings.SERVER
 
     def auto_connect(host):
         SSH = "ssh -p %s %s@%s "% (host[0], host[1], host[2])
@@ -102,8 +102,8 @@ def link():
 def search(id):
     i = 1
     tmp = [""] * 100
-    SHOW_SERVER = setteings.SHOW_SERVER
-    SERVER = setteings.SERVER
+    SHOW_SERVER = settings.SHOW_SERVER
+    SERVER = settings.SERVER
     for sel in SHOW_SERVER:
         for server in SHOW_SERVER[sel]:
             if server != "" and server != None:
