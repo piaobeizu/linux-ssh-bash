@@ -3,10 +3,16 @@
 
 import sys, getopt, os, traceback
 import traceback
+<<<<<<< HEAD
 import setteings
 # import gui
+=======
+import pexpect
+import settings
+>>>>>>> 4b8f5be2c715efc256aaf584a75834d294f58d04
 
 
+<<<<<<< HEAD
 def link():
     try:
         import pexpect
@@ -26,6 +32,10 @@ def link():
 
     SHOW_SERVER = setteings.SHOW_SERVER
     SERVER = setteings.SERVER
+=======
+SHOW_SERVER = settings.SHOW_SERVER
+SERVER = settings.SERVER
+>>>>>>> 4b8f5be2c715efc256aaf584a75834d294f58d04
 
     def auto_connect(host):
         SSH = "ssh -p %s %s@%s "% (host[0], host[1], host[2])
